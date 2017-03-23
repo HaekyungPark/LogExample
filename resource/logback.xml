@@ -42,7 +42,7 @@
 		</rollingPolicy>
 		<triggeringPolicy
 			class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>1MB</MaxFileSize>
+			<MaxFileSize>20KB</MaxFileSize>
 		</triggeringPolicy>
 	</appender>	
 
@@ -63,7 +63,7 @@
     </logger>    
 	
 	<!-- 루트(글로벌) 로거 -->
-	<root level="debug">
+	<root level="warn">
 		<appender-ref ref="consoleAppender" />
 	</root>
 
